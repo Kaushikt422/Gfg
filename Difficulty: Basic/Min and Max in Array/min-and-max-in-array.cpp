@@ -9,12 +9,13 @@ class Solution {
   public:
     pair<long long, long long> getMinMax(vector<long long int> arr) {
          
-         auto min = min_element(arr.begin(),arr.end());
+         auto tin = min_element(arr.begin(),arr.end());
          auto max = max_element(arr.begin(),arr.end());
          
-         return{*min,*max};
+         return{*tin,*max};
     }
 };
+
 
 //{ Driver Code Starts.
 
